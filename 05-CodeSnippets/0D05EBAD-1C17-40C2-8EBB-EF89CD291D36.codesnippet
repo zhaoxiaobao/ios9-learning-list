@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addnotification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>   [[NSNotificationCenter defaultCenter] postNotificationName:@"postPicUrlNotification"
+                                                                object:self
+                                                              userInfo:@{@"postPicUrl":result}];
+            
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ChangeNameNotification:) name:@"postPicUrlNotification" object:nil];
+            
+        }
+        
+        -(void)ChangeNameNotification:(NSNotification*)notification{
+            NSDictionary *dir = [notification userInfo];
+            postHtmlStr = [NSString stringWithFormat:@" &lt;img src=\" %@\" alt=\"\"&gt;   width=200",[dir objectForKey:@"postPicUrl"]];
+        }
+            
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0D05EBAD-1C17-40C2-8EBB-EF89CD291D36</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加通知</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addbutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(screen_width/3-5, screen_width/3+20, screen_width/3+10, 35)];
+    [btn setTitle:@"&lt;#text#&gt;" forState:UIControlStateNormal];
+    btn.contentHorizontalAlignment=UIControlContentHorizontalAlignmentCenter;
+    [btn setTitleColor:fontGray forState:UIControlStateNormal];
+    [btn.layer setMasksToBounds:YES];
+    [btn.layer setCornerRadius:7.0];
+    [btn.layer setBorderWidth:0.5];
+    btn.layer.borderColor=fontGray.CGColor;
+    btn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
+    [btn addTarget:self action:@selector(addBtnTap:) forControlEvents:UIControlEventTouchUpInside];
+[&lt;#superView#&gt; addSubview:btn];
+-(void)addBtnTap:(UIButton *)sender{
+
+    
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>14568651-44F8-45A7-A43B-BFA447FC9E10</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加按钮</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

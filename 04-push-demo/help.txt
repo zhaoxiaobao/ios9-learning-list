@@ -1,0 +1,10 @@
+openssl x509 -in aps_development.cer -inform DER -out PushChatCert.pem -outform PEM 
+
+
+openssl pkcs12 -nocerts -out PushChatKey.pem -in push.p12
+
+
+
+cat PushChatCert.pem  PushChatKey.pem > ck.pem
+
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert PushChatCert.pem -key ck.pem

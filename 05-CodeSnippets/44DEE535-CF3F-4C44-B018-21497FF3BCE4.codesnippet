@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addimageview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIImageView  *imgView=[[UIImageView alloc] initWithFrame:CGRectMake(&lt;##&gt;, &lt;##&gt;, &lt;##&gt;, &lt;##&gt;)];
+    [imgView setImage:[ UIImage imageNamed:@"&lt;##&gt;"]];
+    [self.view addSubview:imgView];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>44DEE535-CF3F-4C44-B018-21497FF3BCE4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>增加图片</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

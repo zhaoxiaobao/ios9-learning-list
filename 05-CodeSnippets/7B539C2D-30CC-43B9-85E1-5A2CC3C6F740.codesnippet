@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addtextfield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITextField *&lt;#name#&gt;;
+&lt;#name#&gt; = [[UITextField alloc] initWithFrame:CGRectMake(&lt;#name#&gt;, &lt;#name#&gt;, &lt;#name#&gt;, &lt;#name#&gt;)];
+    &lt;#name#&gt;.placeholder = @"&lt;#name#&gt;";
+    &lt;#name#&gt;.text=&lt;#name#&gt;;
+    &lt;#name#&gt;.clearButtonMode= UITextFieldViewModeWhileEditing;
+    &lt;#name#&gt;.returnKeyType=UIReturnKeyNext;
+    &lt;#name#&gt;.keyboardType = UIKeyboardTypeEmailAddress;
+[backView addSubview:&lt;#name#&gt;];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7B539C2D-30CC-43B9-85E1-5A2CC3C6F740</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加输入框</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

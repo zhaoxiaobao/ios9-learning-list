@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addmodel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *url = @"http://www.dakaqi.cn/services/welfare-list.action";
+#import "NetworkSingleton.h"
+#import "MJExtension.h"
+#import &lt;SDWebImage/UIImageView+WebCache.h&gt;
+NSMutableArray *_listData;
+- (void)initData{
+    _listData = [[NSMutableArray alloc] init];
+    _KindID = 0;//默认
+    _pageID = 1;//默认
+}
+
+
+
+[[NetworkSingleton sharedManager] getActivityList:nil url:url successBlock:^(id responseBody){
+    NSLog(@"%@",responseBody);
+    
+    NSMutableArray *dataDic = [responseBody objectForKey:@"list"];
+    //        [_activityData removeAllObjects];
+    
+    
+    for (int i=0; i&lt;dataDic.count; i++) {
+        
+        &lt;#model#&gt; *model=[&lt;#model#&gt; mj_objectWithKeyValues:dataDic[i]];
+        
+        [_listData addObject:model];
+        
+        
+    }
+    
+    
+    [self.tableView reloadData];
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
+    
+    
+} failureBlock:^(NSString *error){
+    NSLog(@"%@",error);
+    [self.tableView.mj_footer endRefreshing];
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B4ABEAD4-3E77-4939-810A-ABCE42A0660E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加模型转换</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

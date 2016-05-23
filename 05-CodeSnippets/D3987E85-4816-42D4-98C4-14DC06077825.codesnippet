@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addswitch</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            swMsg = [[UISwitch alloc] initWithFrame:CGRectMake(screen_width - 60, 5, screen_width - 50, 34)];
+            [swMsg setTintColor:navigationBarColor];
+            [swMsg setOnTintColor:navigationBarColor];
+            [swMsg addTarget:self action:@selector(btnOpenMsg:) forControlEvents:UIControlEventValueChanged];
+            BOOL on = [[[NSUserDefaults standardUserDefaults] objectForKey:@"SwMsgMode"] boolValue];
+            [swMsg setOn:on];
+            [cell addSubview:swMsg];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D3987E85-4816-42D4-98C4-14DC06077825</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加开关</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
